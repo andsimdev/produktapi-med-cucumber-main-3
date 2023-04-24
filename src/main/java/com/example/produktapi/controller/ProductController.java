@@ -21,7 +21,7 @@ public class ProductController {
 
     @GetMapping("/my-endpoint")
     ResponseEntity<String> hello(){
-        return new ResponseEntity<String>("Hello, world!", HttpStatus.OK);
+        return new ResponseEntity<String>("Hello, world from feature!", HttpStatus.OK);
     }
     @GetMapping("/products")
     ResponseEntity<List<Product>>getAllProducts() {
